@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Luyen tap cau truc dieu kien 02</title>
+    <style>
+        html {
+            background-color: rgb(202, 143, 16);
+        }
+
+        .lt02 {
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: bisque;
+            border: 3px dashed black;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lt02">
+        <h2>Bai 1: Chuyen tu do C sang do F</h2>
+        <label for="inputC">Type in the degree Celsius that you want to convert(to F Celsius): </label>
+        <input type="number" id="inputC">
+        <button id="F"> Convert </button>
+
+        <h4 id="quydoi"></h4>
+    </div>
+
+    <div class="lt02">
+        <h2>Bai 2: Chuyển từ mét sang feet</h2>
+        <label for="inputM">Type in the number of meter that you want to convert (to Feet): </label>
+        <input type="number" id="inputM">
+        <button id="fee"> Convert </button>
+
+        <h4 id="feet"></h4>
+    </div>
+
+    <div class="lt02">
+        <h2> Bài 3,4,5 Tính diện tích</h2>
+        <label for="shapeSelect"> What shape? </label>
+        <select id="shapeSelect">
+            <option value="" disabled selected>Choose shape</option>
+            <option value="square">Square</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="triangle">Right Triangle</option>
+        </select>
+
+        <aside id="inputForm" class="hidden">
+            <h3>Enter Length and With</h3>
+            <label for="inputA">Length:</label>
+            <input type="number" id="inputA" min="0">
+            <br>
+            <label for="inputB">Width:</label>
+            <input type="number" id="inputB" min="0">
+            <br>
+            <button id="calculateBtn">Calculate</button>
+        </aside>
+
+        <h3 id="result"></h3>
+    </div>
+    <div id="phuongtrinh" class="lt02">
+        <h2>Bài 6,7 Giải phương trình bậc 1,2. </h2>
+        <label for="ptrinh">Type of equation</label>
+        <select id="ptrinh">
+            <option value="" disabled selected>Choose</option>
+            <option value="Bac1">Linear equations(Bậc 1)</option>
+            <option value="Bac2">Quadratic equation(Bậc 2)</option>
+        </select>
+
+        <aside id="inputABC" class="hide">
+            <h3>Enter a, b (and c) </h3>
+            <label for="inputa">A</label>
+            <input type="number" id="inputa">
+            <br>
+            <label for="inputb">B</label>
+            <input type="number" id="inputb">
+            <br>
+            <label for="inputc">C</label>
+            <input type="number" id="inputc">
+            <br>
+            <button id="calEQ">Calculate</button>
+        </aside>
+
+        <h3 id="ketqua"></h3>
+    </div>
+    <div class="lt02">
+        <h2>Bài 8 Kiểm tra tuổi</h2>
+        <label for="age">Nhập tuổi</label>
+        <input type="number" id="Ages" placeholder="Ages">
+        <button id="nuttuoi" disabled> Submit </button>
+
+        <h4 id="displayage"></h4>
+    </div>
+    <div class="lt02">
+        <h2>Bài 9 Kiểm tra ba số là một tam giác</h2>
+        <img src="https://vnmedia2.monkeyuni.net/upload/web/storage_web/01-03-2023_11:20:51_hinh-tam-giac.jpg"
+            style="width: 500px; margin: 20px ">
+        <br>
+        <input id="canha" type="number" placeholder="Canh a" min="1">;
+        <input id="canhb" type="number" placeholder="Canh b" min="1">;
+        <input id="canhc" type="number" placeholder="Canh c" min="1">;
+        <br>
+        <button id="check"> Kiểm tra </button>
+        <br>
+        <h3 id="thongbao"></h3>
+        <br>
+        <button id="reset">Reset</button>
+    </div>
+    <div class="lt02">
+        <h2>Bài 10 Tính giá điện</h2>
+        <label for="sodien", style="font-size:19px">Nhập số điện: </label>
+        <input type="number" id="sodien" placeholder="Nhập số điện" >
+        <button id="tinh"> Tính </button>
+        <h3 id="giadien"></h3>
+    </div>
+    <script src="quydoidoC.js"></script>
+    <script src="dientich.js"></script>
+    <script src="phuongtrinh.js"></script>
+    <script src="ktratuoi.js"></script>
+    <script src="ktratamgiac.js"></script>
+    <script src="giadien.js"></script>
+
+</body>
+
+</html>
